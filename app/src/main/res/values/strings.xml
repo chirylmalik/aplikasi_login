@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">TB1</string>
+    <string name="output">Tampilan Output</string>
+    <string name="customer">Customer ID:</string>
+    <string name="nama">Nama Lengkap:</string>
+    <string name="resetdata">Reset</string>
+    <string name="alamat">Alamat:</string>
+    <string name="saveData">Save</string>
+</resources>

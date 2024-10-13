@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_theme_light"
+    tools:context=".Login">
+
+    <TextView
+        android:id="@+id/Judul"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="@color/app_theme"
+        android:text="KALKULATOR"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:textColor="@color/app_theme_light"
+        android:fontFamily="sans-serif-medium"
+        android:textSize="25dp"/>
+
+    <TextView
+        android:id="@+id/Angka1Text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Judul"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="82dp"
+        android:layout_marginTop="58dp"
+        android:text="Angka 1" />
+
+    <EditText
+        android:id="@+id/Angka1"
+        android:layout_width="170dp"
+        android:layout_height="140dp"
+        android:layout_below="@id/Angka1Text"
+        android:layout_alignTop="@+id/Angka1Text"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="9dp"
+        android:layout_marginTop="32dp"
+        android:textSize="50sp"
+        android:textAlignment="center"
+        android:layout_weight="1"
+        android:background="@drawable/edittext_border"
+        android:ems="10"
+        android:inputType="number" />
+
+    <TextView
+        android:id="@+id/Angka2Text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Angka1"
+        android:layout_alignLeft="@+id/Angka1Text"
+        android:layout_marginLeft="196dp"
+        android:layout_marginTop="-172dp"
+        android:text="Angka 2" />
+
+    <EditText
+        android:id="@+id/Angka2"
+        android:layout_width="170dp"
+        android:layout_height="140dp"
+        android:layout_below="@id/Angka1Text"
+        android:layout_alignTop="@+id/Angka1Text"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="218dp"
+        android:layout_marginLeft="218dp"
+        android:layout_marginTop="32dp"
+        android:textSize="50sp"
+        android:textAlignment="center"
+        android:layout_weight="1"
+        android:background="@drawable/edittext_border"
+        android:ems="10"
+        android:inputType="number" />
+
+    <Button
+        android:id="@+id/btnPlus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Angka2"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="18dp"
+        android:backgroundTint="@color/app_theme"
+        android:text="+"
+        android:textColor="@android:color/white"
+        android:textSize="20sp" />
+
+
+    <Button
+        android:id="@+id/btnMinus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Angka2"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="18dp"
+        android:layout_toEndOf="@id/btnPlus"
+        android:backgroundTint="@color/app_theme"
+        android:text="-"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/btnKali"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Angka2"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginEnd="0dp"
+        android:textSize="20sp"
+        android:layout_toEndOf="@id/btnMinus"
+        android:backgroundTint="@color/app_theme"
+        android:text="x" />
+
+    <Button
+        android:id="@+id/btnBagi"
+        android:layout_width="92dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Angka2"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginEnd="15dp"
+        android:layout_toEndOf="@id/btnKali"
+        android:backgroundTint="@color/app_theme"
+        android:text=":"
+        android:textSize="20sp" />
+
+
+    <Button
+        android:id="@+id/btnReset"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="316dp"
+        android:layout_marginEnd="15dp"
+        android:backgroundTint="@color/app_theme"
+        android:text="Reset" />
+
+    <TextView
+        android:id="@+id/HasilText"
+        android:layout_width="257dp"
+        android:layout_height="201dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="16dp"
+        android:layout_marginEnd="73dp"
+        android:layout_marginBottom="158dp"
+        android:text="         "
+        android:textAlignment="center"
+        android:textSize="90sp" />
+
+    <ImageView
+        android:id="@+id/backButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/back_button_background"
+        android:onClick="onBackButtonClick"
+        android:src="@drawable/baseline_arrow_back_24"
+        app:tint="@color/app_theme_light" />
+
+</RelativeLayout>

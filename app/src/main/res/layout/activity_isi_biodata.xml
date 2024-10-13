@@ -1,0 +1,221 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/app_theme_light">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/app_theme"
+        android:text="BIODATA"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:textColor="@color/app_theme_light"
+        android:fontFamily="sans-serif-medium"
+        android:textSize="25dp"/>
+
+    <ImageView
+        android:id="@+id/backButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/back_button_background"
+        android:onClick="onBackButtonClick"
+        android:src="@drawable/baseline_arrow_back_24"
+        app:tint="@color/app_theme_light" />
+
+    <TextView
+        android:id="@+id/customerText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="52dp"
+        android:text="@string/customer"
+        android:textSize="15dp" />
+
+    <EditText
+        android:id="@+id/customer"
+        android:layout_width="315dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/customerText"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="23dp"
+        android:layout_marginRight="49dp"
+        android:background="@drawable/edit_text_biodata_background"
+        android:ems="10"
+        android:hint="Customer ID"
+        android:inputType="text"
+        android:paddingLeft="5dp" />
+
+    <TextView
+        android:id="@+id/namaText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/customer"
+        android:layout_alignLeft="@+id/customerText"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="49dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="14dp"
+        android:text="@string/nama"
+        android:textSize="15dp" />
+
+    <EditText
+        android:id="@+id/nama"
+        android:layout_width="312dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/namaText"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="23dp"
+        android:layout_marginRight="49dp"
+        android:background="@drawable/edit_text_biodata_background"
+        android:ems="10"
+        android:hint="Nama"
+        android:inputType="text"
+        android:paddingLeft="5dp" />
+
+    <TextView
+        android:id="@+id/alamatText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/nama"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="48dp"
+        android:layout_marginTop="13dp"
+        android:text="@string/alamat"
+        android:textSize="15dp" />
+
+    <EditText
+        android:id="@+id/alamat"
+        android:layout_width="312dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/alamatText"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="24dp"
+        android:layout_marginRight="49dp"
+        android:background="@drawable/edit_text_biodata_background"
+        android:ems="10"
+        android:hint="Alamat"
+        android:inputType="text"
+        android:paddingLeft="5dp" />
+
+    <Button
+        android:id="@+id/Reset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/alamat"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="216dp"
+        android:layout_marginTop="37dp"
+        android:layout_marginEnd="43dp"
+        android:backgroundTint="@color/app_theme"
+        android:text="@string/resetdata" />
+
+    <Button
+        android:id="@+id/Save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/alamat"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="37dp"
+        android:layout_marginEnd="215dp"
+        android:backgroundTint="@color/app_theme"
+        android:text="@string/saveData" />
+
+    <TextView
+        android:id="@+id/textCustomer"
+        android:layout_width="98dp"
+        android:layout_height="31dp"
+        android:layout_row="3"
+        android:layout_column="1"
+        android:layout_below="@+id/Save"
+        android:layout_alignParentStart="true"
+        android:layout_gravity="left"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="45dp"
+        android:text="@string/customer" />
+
+    <TextView
+        android:id="@+id/namaValue"
+        android:layout_width="237dp"
+        android:layout_height="34dp"
+        android:layout_row="3"
+        android:layout_column="2"
+        android:layout_below="@+id/customerValue"
+        android:layout_alignParentEnd="true"
+        android:layout_gravity="left"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="41dp"
+        android:layout_toEndOf="@+id/nameText"
+        android:text=""
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/customerValue"
+        android:layout_width="238dp"
+        android:layout_height="38dp"
+        android:layout_row="1"
+        android:layout_column="2"
+        android:layout_below="@+id/Save"
+        android:layout_alignParentEnd="true"
+        android:layout_gravity="left"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="41dp"
+        android:layout_toEndOf="@+id/textCustomer"
+        android:text=""
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/alamatValue"
+        android:layout_width="238dp"
+        android:layout_height="148dp"
+        android:layout_row="5"
+        android:layout_column="2"
+        android:layout_below="@+id/namaValue"
+        android:layout_alignParentEnd="true"
+        android:layout_gravity="left"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="41dp"
+        android:layout_toEndOf="@+id/textAlamat"
+        android:text=""
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/nameText"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_row="1"
+        android:layout_column="1"
+        android:layout_below="@+id/textCustomer"
+        android:layout_alignParentStart="true"
+        android:layout_gravity="left"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="21dp"
+        android:text="@string/nama" />
+
+    <TextView
+        android:id="@+id/textAlamat"
+        android:layout_width="98dp"
+        android:layout_height="30dp"
+        android:layout_row="5"
+        android:layout_column="1"
+        android:layout_below="@+id/nameText"
+        android:layout_alignParentStart="true"
+        android:layout_gravity="left"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/alamat" />
+
+</RelativeLayout>
